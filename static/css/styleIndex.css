@@ -1,0 +1,248 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    }
+    .main-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+    
+    }
+    .main-container .container-header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 11.5%;
+    background-color: beige;
+    
+    }
+    .container-header .up-nav{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: 33%;
+    background-color: #045694;
+    }
+    .up-nav .insert-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+    height: 100%;
+    
+    }
+    .insert-buttons .btn{
+    text-decoration: none;
+    font-size: 0.85vw;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    }
+    .btn:hover{
+        color: #BEF4FF;
+    }
+    .container-header .linea{
+        display: flex;
+        height: 1%;
+        width: 100%;
+        background-color: #9BBBD4;
+    }
+    .container-header .main-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 67%;
+    background-color: #045694;
+    
+    }
+    .main-nav .put-logo{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 15%;
+    height: 100%;
+    
+    }
+    .put-logo .fifa{
+    display: flex;
+    width: 60%;
+    height: 80%;
+    
+    }
+    .put-logo .logo{
+        display: flex;
+        height: 100%;
+        width: 35%;
+    }
+    .main-nav .rgt-buttons{
+    
+        display: flex;
+        width: 13%;
+        height: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+    .rgt-buttons .bzt{
+    text-decoration: none;
+    color: white;
+    font-size: 1.7vw;
+    
+    }
+    .bzt:hover{
+        color: #00B8FF;
+    }
+    .main-container .main-content-container{
+    display: flex;
+    
+    width: 100%;
+    height: 70.5%;
+    background-image: url(/static/img/fifZeta.jpg);
+    
+    }
+    #awa{
+        display: flex;
+        width: 70%;
+        height: 50%;
+    }
+ .alerta-container{
+        display: flex;
+        opacity: 0;
+        pointer-events: none;
+        justify-content: space-around;
+        align-items: center;
+        position:absolute;
+        z-index: 2;
+        width: 20%;
+        height: 25%;
+        background:
+        linear-gradient(
+          145deg,
+          #ffde45,
+          #ffffff 16%,
+          #ffde45 21%,
+          #ffffff 24%,
+          #452100 27%,
+          #ffde45 36%,
+          #ffffff 45%,
+          #ffffff 60%,
+          #ffde45 72%,
+          #ffffff 80%,
+          #ffde45 84%,
+          #452100
+        );
+        border: solid 0.2vw black;
+        background-size: 300% 300%;
+        animation: efecto 12s ease-in-out infinite;
+        transition: .5s;
+        right:1%;
+        top: 10%;
+        flex-direction: column;
+        font-size: 1.2vw;
+        border-radius: 1.2vw;
+        overflow: hidden;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+    }
+    .alerta-container .btn{
+        display: flex;
+background-color: black;
+color:white;
+
+justify-content: center;
+align-items: center;
+        font-size: 1.28vw;
+        width: 60%;
+        height: 12.5%;
+        transition: 0.4s;
+    }
+    .btn:hover{
+        cursor: pointer;
+        color: black;
+        background-color: white;
+    }
+    .main-content-container .deco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28.7%;
+    height: 100%;
+    }
+    .main-content-container .insert-video{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 72%
+        ;
+        height: 100%;
+        
+    
+    }
+    .insert-video .vid{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .main-container .pie-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 18%;
+    background-color: #045694;
+    
+    }
+    .pie-container .card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 16%;
+    height: 85%;
+    text-align: center;
+    justify-content: space-between;
+    
+    
+    }
+    .card .img{
+    width: 73%;
+    height: 80%;
+    border-radius: 0.6vw;
+    display: flex;
+    transition: 0.5s;
+    }
+    .img:hover{
+    transform: scale(1.1);
+    
+    }
+    a{
+        color: white;
+        text-decoration: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 1.1vw;
+    }
+    a:hover{
+        color: #BEF4FF;
+    }
+    .ver{
+        opacity: 1;
+        pointer-events: auto;
+    }
+    @keyframes efecto {
+        0%{
+    background-position: 0 50%;
+        }
+        50%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 0 50%;
+            
+        }    
+    }

@@ -1,0 +1,33 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style69.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main-container" class="container-alert">
+        <div class="alert-body">
+            <div class="container-image">
+                <button class="cerrate" id="cloze" onclick="cerrate()">X</button>
+                <img class="gif-perro" src="{% static 'img/cr7.jpg' %}" alt="gif">
+            </div>
+            <div class="container-text">
+                {% for message in messages %}
+                    <span>{{ message }}</span>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+<script>
+    function cerrate() {
+    const modal = document.getElementById("main-container");
+    modal.classList.remove("mostrar");
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+</head>
+<body>
+    <div id="zzz" class="modal-container">
+        <form class="modal" action="{% url 'autenticacion:logueo' %}" method="post">
+            {% csrf_token %}
+            <div class="zte-image">
+                <h1 style="font-size:2.8vw;">LOGUEATE!</h1>
+                <p style="font-size:1.5vw;">Gestiona de La mejor manera los equipos¿Te lo vas a perder?</p>
+            </div>
+            <div class="content-form">
+                <div class="divi"><input id="x" onclick="cerrarP()" type="button" value="X"></div>
+                <div class="divi2">LOGIN</div>
+                <div class="divi"></div>
+                <div class="divi2"></div>
+                <div class="divi">USERNAME:</div>
+                <div class="divi2"><input name="email" class="inputcito" type="text" required></div>
+                <div class="divi">CONTRASEÑA:</div>
+                <div class="divi2"><input name="password" class="inputcito" type="password" required></div>
+                <div class="divi"></div>
+                <div class="divi2"></div>
+                <div class="divi3"><input id="bn" type="submit" value="ENTRAR"></div>
+            </div>
+        </form>
+    </div>
+</body>

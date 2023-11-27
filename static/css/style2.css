@@ -1,0 +1,118 @@
+body{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+.modal-container{
+display: flex;
+position: fixed;
+z-index: 3;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100vh;
+background-color: rgba(128, 128, 128, 0.35);
+pointer-events: none;
+opacity: 0;
+transition: 0.5s;
+
+}
+.modal-container .modal{
+display: flex;
+width: 68%;
+height: 70%;
+background-color: white;
+}
+.modal .zte-image{
+display: flex;
+overflow: hidden;
+padding-left:3% ;
+padding-right:3% ;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-image: url(/static/img/bkg.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+text-align: center;
+
+color: white;
+width: 40%;
+height: 100%;
+background-color: rgb(78, 67, 58);
+
+}
+.modal .content-form{
+display: flex;
+flex-direction: column;
+width: 60%;
+height: 100%;
+overflow: hidden;
+
+}
+.content-form .divi{
+    display: flex;
+    font-size: 1.12vw;
+align-items: center;
+    padding-left: 5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    height: 7%;
+   
+}
+.content-form .divi2{
+    display: flex;
+    font-size: 1.8vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+}
+.divi2 .inputcito{
+display: flex;
+
+width: 90%;
+height: 80%;
+font-size: 1.2vw;
+border: none;
+border-bottom: solid 0.1vw black;
+outline: none;
+
+}
+.inputcito:focus{
+    background-color: lightgray;
+}
+.content-form .divi3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+}
+#x{
+    position: relative;
+    left: 87.5%;
+    font-size: 1.8vw;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#x:hover{
+    transform: scale(1.1);
+    color: red;
+}
+#bn{
+    height: 35%;
+    border: none;
+    border-radius: 1.2vw;
+    cursor: pointer;
+    font-size: 1.3vw;
+    background-color: #045694;
+    color: white;
+}
+.see{
+    opacity: 1;
+    pointer-events: auto;
+}

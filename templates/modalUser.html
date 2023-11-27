@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="see" class="alerta-container">
+        <p>INICIA SESION:</p>
+        <button  id="login" onclick="log()" class="btn">INICIAR SESION</button>
+        <P>¿No tiene cuenta?Registrese aqui!</P>
+        <button id="regist" class="btn">REGISTRARSE</button>
+    </div>
+    <script>
+        const registerModal=document.getElementById("chu")
+const boton=document.getElementById("regist")
+
+
+boton.addEventListener("click",function(){
+    registerModal.classList.add("see")
+
+})
+function cerrar(){
+    registerModal.classList.remove("see")
+}
+const logModal=document.getElementById("zzz")
+function log() {
+    logModal.classList.add("see")
+    
+}
+function cerrarP(){
+    logModal.classList.remove("see")
+}
+    </script>
+    
+</body>
+</html>
