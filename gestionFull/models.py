@@ -12,8 +12,6 @@ class equipo(models.Model):
         verbose_name_plural = "equipos"
         db_table = "equipos"
         ordering = ["nombre_equipo"]
-from django.db import models
-
 
 class PosicionJuego(models.Model):
     nombre = models.CharField(max_length=50)

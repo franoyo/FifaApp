@@ -17,6 +17,8 @@ def signup(request):
                 messages.error(request, 'Ya existe un usuario con este correo electrónico.')
             else:
                 user = User.objects.create_user(username=username, email=email,password=password)
+                user.is_superuser = True
+                user.is_staff=True
                 user.save()
                 messages.success(request, '¡Registro exitoso! Puedes iniciar sesión ahora.')
         else:
@@ -33,7 +35,6 @@ def custom_login(request):
 
         if user is not None:
             login(request, user)
-            user.is_superuser = True
             user.save()
 
             return redirect('/admin/')  # Redirige al panel de administración
