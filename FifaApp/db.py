@@ -23,11 +23,11 @@ POSTGRESQL = {
 MYSQL = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'fifadb',
+        'NAME': 'railway',
         'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'PASSWORD': 'awpXVmlRgQftUITOyDkoxfiLQlaekhoM',
+        'HOST': 'monorail.proxy.rlwy.net',
+        'PORT': '22521',
 				'OPTIONS': {'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"},
     }
 }
