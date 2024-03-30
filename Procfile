@@ -1,1 +1,1 @@
-web: python manage.py migrate && gunicorn FifaApp.wsgi
+web: python manage.py migrate && gunicorn FifaApp.wsgi && pip install mysqlclient
